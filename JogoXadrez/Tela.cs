@@ -6,9 +6,9 @@ namespace JogoXadrez
     {
         public static void imprimeTabuleiro(Tabuleiro tab)
         {
-            for (int i = 0; i < tab.Linhas; i++)
+            for (int i = 0; i < tab.linhas; i++)
             {
-                for (int j = 0; j < tab.Linhas; j++)
+                for (int j = 0; j < tab.linhas; j++)
                 {
                     if (tab.peca(i, j) == null)
                     {
