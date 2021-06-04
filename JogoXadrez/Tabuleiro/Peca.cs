@@ -1,6 +1,5 @@
 ﻿
-
-namespace Tabuleiro
+namespace tabuleiro
 {
     class Peca
     {
@@ -8,5 +7,15 @@ namespace Tabuleiro
         public Cor cor { get; protected set; }
         public int qtdMovimento { get; protected set; }
         public Tabuleiro tab { get; protected set; }
+
+        public Peca(Posicao posicao, Cor cor, Tabuleiro tab)
+        {
+            this.posicao = posicao;
+            this.cor = cor;
+            this.qtdMovimento = 0;
+            this.tab = tab;
+        }
+
+       
     }
 }
